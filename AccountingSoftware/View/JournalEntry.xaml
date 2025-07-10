@@ -66,7 +66,7 @@
                     <Button FontSize="30" Foreground="White" x:Name="addCredit" Width="172" Height="50" Content="ADD ENTRY" Click="addCredit_Click" RenderTransformOrigin="-0.107,0.336"/>
                 </StackPanel>
                 
-                <Button Width="80" Height="30" VerticalAlignment="Bottom" BorderBrush="Aqua" Content="Submit" Foreground="Aqua" Background="Transparent" Margin="670,0,50,82" Name="submit" Click="submit_Click" />
+                <Button Width="80" Height="30" VerticalAlignment="Bottom" BorderBrush="Aqua" Content="Submit" Foreground="Aqua" Background="Transparent" Margin="710,0,10,245" Name="submit" Click="submit_Click" />
             </Grid>
         </StackPanel>
 
