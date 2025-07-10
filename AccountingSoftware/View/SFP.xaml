@@ -18,6 +18,7 @@
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
+                        <RowDefinition/>
                     </Grid.RowDefinitions>
 
                     <Grid.ColumnDefinitions>
@@ -42,6 +43,7 @@
                     <StackPanel Margin="0,60,0,0" Grid.Row="2" Grid.Column="1" Name="equityAmount" Width="400" HorizontalAlignment="Left">
                         <TextBlock Text="Amount($):" FontSize="30"/>
                     </StackPanel>
+                    <Button Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" Height="80" Content="BACK" Name="home" Click="home_Click" />
                 </Grid>
             </StackPanel>
         </ScrollViewer>

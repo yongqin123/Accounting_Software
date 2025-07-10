@@ -9,6 +9,7 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/add.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/back.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/home.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/key.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo.png")]

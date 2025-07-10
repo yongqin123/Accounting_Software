@@ -79,6 +79,7 @@ namespace AccountingSoftware
             double total = pie.Slices.Select(x => x.Value).Sum();
             for (int i = 0; i < pie.Slices.Count; i++)
             {
+                pie.Slices[i].LabelFontColor = ScottPlot.Colors.White;
                 pie.Slices[i].LabelFontSize = 20;
                 pie.Slices[i].Label = $"{pie.Slices[i].Value}";
                 pie.Slices[i].LegendText = $"{types[i]} " +
@@ -117,6 +118,11 @@ namespace AccountingSoftware
         private void sfp_Click(object sender, RoutedEventArgs e)
         {
             _mainFrame.Navigate(new SFP(_mainFrame));
+        }
+
+        private void sci_Click(object sender, RoutedEventArgs e)
+        {
+            _mainFrame.Navigate(new SCI(_mainFrame));
         }
     }
 }

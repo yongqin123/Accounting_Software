@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <None Remove="Images\add.png" />
+    <None Remove="Images\back.png" />
     <None Remove="Images\home.png" />
     <None Remove="Images\key.png" />
     <None Remove="Images\logo.png" />
@@ -20,6 +21,9 @@
 
   <ItemGroup>
     <Content Include="Images\add.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\back.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\home.png">

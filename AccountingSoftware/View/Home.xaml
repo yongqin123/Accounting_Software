@@ -39,6 +39,10 @@
                 <Button Name="sfp" Content="SFP" Click="sfp_Click" Width="150" HorizontalAlignment="Right" BorderThickness="0,0,0,0" Foreground="Aqua" Background="Transparent"/>
             </Grid>
             <Grid>
+                <Image Source="/Images/notes.png" Width="30" Height="30" HorizontalAlignment="Left" Margin="40,0,0,0"/>
+                <Button Name="sci" Content="SCI" Click="sci_Click" Width="150" HorizontalAlignment="Right" BorderThickness="0,0,0,0" Foreground="Aqua" Background="Transparent"/>
+            </Grid>
+            <Grid>
                 <Image Source="/Images/logout.png" Width="30" Height="30" HorizontalAlignment="Left" Margin="40,0,0,0"/>
                 <Button Name="logout" Content="Logout" Click="logout_Click" Width="150" HorizontalAlignment="Right" BorderThickness="0,0,0,0" Foreground="Aqua" Background="Transparent"/>
             </Grid>

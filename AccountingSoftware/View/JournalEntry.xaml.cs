@@ -289,6 +289,11 @@ namespace AccountingSoftware.View
         {
             _mainFrame.Navigate(new SFP(_mainFrame));
         }
+
+        private void sci_Click(object sender, RoutedEventArgs e)
+        {
+            _mainFrame.Navigate(new SCI(_mainFrame));
+        }
     }
 
 }

@@ -44,13 +44,41 @@ namespace AccountingSoftware.View
             double total_assets = 0;
             double total_liability = 0;
             double total_equity = 0;
-
+            double total_revenue = 0;
+            double total_expense = 0;
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string selectQuesry = "SELECT name,amount FROM Account WHERE type='Asset'";
-                
+
+                string selectQuesry = "SELECT name,amount FROM Account WHERE type='Revenue'";
+
                 using (SqlCommand cmd = new SqlCommand(selectQuesry, conn))
+                {
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {                      
+                        total_revenue += Double.Parse(reader[1].ToString());
+                    }                 
+                    reader.Close();
+                }
+                string selectQuery = "SELECT name,amount FROM Account WHERE type='Expense'";
+
+                using (SqlCommand cmd = new SqlCommand(selectQuery, conn))
+                {
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {                        
+                        total_expense += Double.Parse(reader[1].ToString());
+                    }
+                    reader.Close();
+                }
+
+
+                string selectQuery3 = "SELECT name,amount FROM Account WHERE type='Asset'";
+                
+                using (SqlCommand cmd = new SqlCommand(selectQuery3, conn))
                 {
                     SqlDataReader reader = cmd.ExecuteReader();
                     
@@ -58,6 +86,8 @@ namespace AccountingSoftware.View
                     {
                         TextBlock account = new TextBlock();
                         TextBlock amount = new TextBlock();
+                        account.FontSize = 30;
+                        amount.FontSize = 30;
                         account.Text = reader[0].ToString();
                         total_assets += Double.Parse(reader[1].ToString());
                         amount.Text = reader[1].ToString();
@@ -66,9 +96,9 @@ namespace AccountingSoftware.View
                     }
                     reader.Close();
                 }
-                string selectQuery = "SELECT name,amount FROM Account WHERE type='Liability'";
+                string selectQuery4 = "SELECT name,amount FROM Account WHERE type='Liability'";
 
-                using (SqlCommand cmd = new SqlCommand(selectQuery, conn))
+                using (SqlCommand cmd = new SqlCommand(selectQuery4, conn))
                 {
                     SqlDataReader reader = cmd.ExecuteReader();
 
@@ -78,6 +108,8 @@ namespace AccountingSoftware.View
                         TextBlock amount = new TextBlock();
                         account.Text = reader[0].ToString();
                         amount.Text = reader[1].ToString();
+                        account.FontSize = 30;
+                        amount.FontSize = 30;
                         total_liability += Double.Parse(reader[1].ToString());
                         liabilityAccount.Children.Add(account);
                         liabilityAmount.Children.Add(amount);
@@ -95,6 +127,8 @@ namespace AccountingSoftware.View
                     {
                         TextBlock account = new TextBlock();
                         TextBlock amount = new TextBlock();
+                        account.FontSize = 30;
+                        amount.FontSize = 30;
                         account.Text = reader[0].ToString();
                         amount.Text = reader[1].ToString();
                         total_equity += Double.Parse(reader[1].ToString());
@@ -102,9 +136,23 @@ namespace AccountingSoftware.View
                         equityAmount.Children.Add(amount);
                     }
                     reader.Close();
+                    TextBlock retainedEarningsLabel = new TextBlock();
+                    TextBlock retainedEarnings = new TextBlock();
+                    retainedEarnings.FontSize = 30;
+                    retainedEarningsLabel.FontSize = 30;
+                    retainedEarnings.Text = (total_revenue-total_expense).ToString();
+                    retainedEarningsLabel.Text = "Retained Earnings";
+                    equityAccount.Children.Add(retainedEarningsLabel);
+                    equityAmount.Children.Add(retainedEarnings);
                 }
 
             }
+
+        }
+
+        private void home_Click(object sender, RoutedEventArgs e)
+        {
+            _mainFrame.Navigate(new Home(_mainFrame));
         }
     }
 }

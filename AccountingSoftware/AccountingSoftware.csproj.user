@@ -17,6 +17,9 @@
     <Compile Update="View\Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\SCI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\SFP.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
