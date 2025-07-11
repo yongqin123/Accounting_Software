@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Accounting_Software\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3ABAD03F-C563-46E6-A270-2E87FF7C0DDB}|AccountingSoftware\\AccountingSoftware.csproj|c:\\users\\admin\\documents\\github\\accounting_software\\accountingsoftware\\view\\journalentry.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3ABAD03F-C563-46E6-A270-2E87FF7C0DDB}|AccountingSoftware\\AccountingSoftware.csproj|solutionrelative:accountingsoftware\\view\\journalentry.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3ABAD03F-C563-46E6-A270-2E87FF7C0DDB}|AccountingSoftware\\AccountingSoftware.csproj|c:\\users\\admin\\documents\\github\\accounting_software\\accountingsoftware\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3ABAD03F-C563-46E6-A270-2E87FF7C0DDB}|AccountingSoftware\\AccountingSoftware.csproj|solutionrelative:accountingsoftware\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3ABAD03F-C563-46E6-A270-2E87FF7C0DDB}|AccountingSoftware\\AccountingSoftware.csproj|c:\\users\\admin\\documents\\github\\accounting_software\\accountingsoftware\\view\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3ABAD03F-C563-46E6-A270-2E87FF7C0DDB}|AccountingSoftware\\AccountingSoftware.csproj|solutionrelative:accountingsoftware\\view\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,25 +19,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "JournalEntry.xaml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\Accounting_Software\\AccountingSoftware\\View\\JournalEntry.xaml",
-              "RelativeDocumentMoniker": "AccountingSoftware\\View\\JournalEntry.xaml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\Accounting_Software\\AccountingSoftware\\View\\JournalEntry.xaml",
-              "RelativeToolTip": "AccountingSoftware\\View\\JournalEntry.xaml",
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\Accounting_Software\\AccountingSoftware\\View\\Login.xaml",
+              "RelativeDocumentMoniker": "AccountingSoftware\\View\\Login.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\Accounting_Software\\AccountingSoftware\\View\\Login.xaml",
+              "RelativeToolTip": "AccountingSoftware\\View\\Login.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-10T04:07:49.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\Accounting_Software\\AccountingSoftware\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "AccountingSoftware\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\Accounting_Software\\AccountingSoftware\\MainWindow.xaml",
-              "RelativeToolTip": "AccountingSoftware\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-10T04:04:59.004Z",
+              "WhenOpened": "2025-07-11T20:03:36.492Z",
               "EditorCaption": ""
             }
           ]

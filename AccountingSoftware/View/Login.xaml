@@ -11,7 +11,7 @@
     <Grid Name="login">
         
         <StackPanel Name="stack" Width="400px" Margin="200,20,200,29" >
-            <Image Source="/Images/logo.png" Height="100" Width="100" Margin="0,40,0,0"/>
+            
             <TextBlock Name="admin" Text="ADMIN PANEL" HorizontalAlignment="Center" FontSize="30"  FontWeight="Bold" Margin="0,50,0,0" />
             <TextBlock Name="usernameLabel" Text="USERNAME" HorizontalAlignment="Left" FontSize="10" Margin="40,100,0,0"  FontWeight="Bold" />
             <TextBox Name="username" Width="300" BorderThickness="0,0,0,1" Background="Transparent" BorderBrush="Aqua" FontSize="30" Foreground="white"/>
