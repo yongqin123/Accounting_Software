@@ -77,7 +77,8 @@ namespace AccountingSoftware.View
                 var control2 = (Debit)this.FindName($"debit{k}");
                 if (control2 != null)
                 {
-                    if (control2.account.Text == "" | control2.amount.Text == "") {
+                    if (control2.account.Text == "" | control2.amount.Text == "")
+                    {
                         isEmpty = false;
                         MessageBoxResult mb = MessageBox.Show("Included NULL values", "ERROR!", MessageBoxButton.OK, MessageBoxImage.Error);
                         _mainFrame.Navigate(new JournalEntry(_mainFrame));
@@ -88,7 +89,7 @@ namespace AccountingSoftware.View
                     }
 
                 }
-                
+            }   
             for (int j = 0; j < credit_counter; j++)
             {
                 var control3 = (Credit)this.FindName($"credit{j}");
@@ -108,11 +109,11 @@ namespace AccountingSoftware.View
                 
             }
             if (debitTotal != creditTotal) {
-                    isEmpty = false;
-                    MessageBoxResult mb = MessageBox.Show("Debit and Credit is Not Balanced", "ERROR!", MessageBoxButton.OK, MessageBoxImage.Error);
-                    _mainFrame.Navigate(new JournalEntry(_mainFrame));
+                isEmpty = false;
+                MessageBoxResult mb = MessageBox.Show("Debit and Credit is Not Balanced", "ERROR!", MessageBoxButton.OK, MessageBoxImage.Error);
+                _mainFrame.Navigate(new JournalEntry(_mainFrame));
 
-                }
+            }
 
             if (isEmpty)
                 {
@@ -259,7 +260,7 @@ namespace AccountingSoftware.View
                         }
                     }
                 }
-            }
+            
             _mainFrame.Navigate(new Home(_mainFrame));
         }
         private void addAccount_Click(object sender, RoutedEventArgs e)
