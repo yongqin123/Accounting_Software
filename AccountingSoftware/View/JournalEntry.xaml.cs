@@ -82,6 +82,7 @@ namespace AccountingSoftware.View
                         isEmpty = false;
                         MessageBoxResult mb = MessageBox.Show("Included NULL values", "ERROR!", MessageBoxButton.OK, MessageBoxImage.Error);
                         _mainFrame.Navigate(new JournalEntry(_mainFrame));
+                        break;
                     }
                     else
                     {
@@ -100,6 +101,7 @@ namespace AccountingSoftware.View
                         isEmpty = false;
                         MessageBoxResult mb = MessageBox.Show("Included NULL values", "ERROR!", MessageBoxButton.OK, MessageBoxImage.Error);
                         _mainFrame.Navigate(new JournalEntry(_mainFrame));
+                        break;
                     }
                         else
                         {
@@ -112,7 +114,7 @@ namespace AccountingSoftware.View
                 isEmpty = false;
                 MessageBoxResult mb = MessageBox.Show("Debit and Credit is Not Balanced", "ERROR!", MessageBoxButton.OK, MessageBoxImage.Error);
                 _mainFrame.Navigate(new JournalEntry(_mainFrame));
-
+                
             }
 
             if (isEmpty)
