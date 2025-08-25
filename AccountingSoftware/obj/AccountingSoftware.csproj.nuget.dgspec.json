@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Documents\\GitHub\\Accounting_Software\\AccountingSoftware\\AccountingSoftware.csproj": {}
+    "C:\\Users\\yongq\\OneDrive\\Desktop\\AccountingSoftware\\Accounting_Software\\AccountingSoftware\\AccountingSoftware.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Documents\\GitHub\\Accounting_Software\\AccountingSoftware\\AccountingSoftware.csproj": {
+    "C:\\Users\\yongq\\OneDrive\\Desktop\\AccountingSoftware\\Accounting_Software\\AccountingSoftware\\AccountingSoftware.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\GitHub\\Accounting_Software\\AccountingSoftware\\AccountingSoftware.csproj",
+        "projectUniqueName": "C:\\Users\\yongq\\OneDrive\\Desktop\\AccountingSoftware\\Accounting_Software\\AccountingSoftware\\AccountingSoftware.csproj",
         "projectName": "AccountingSoftware",
-        "projectPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Accounting_Software\\AccountingSoftware\\AccountingSoftware.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Accounting_Software\\AccountingSoftware\\obj\\",
+        "projectPath": "C:\\Users\\yongq\\OneDrive\\Desktop\\AccountingSoftware\\Accounting_Software\\AccountingSoftware\\AccountingSoftware.csproj",
+        "packagesPath": "C:\\Users\\yongq\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yongq\\OneDrive\\Desktop\\AccountingSoftware\\Accounting_Software\\AccountingSoftware\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yongq\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
