@@ -94,6 +94,14 @@ namespace AccountingSoftware.View
                         assetAccount.Children.Add(account);
                         assetAmount.Children.Add(amount);
                     }
+                    TextBlock totalAccount = new TextBlock();
+                    TextBlock totalAmount = new TextBlock();
+                    totalAccount.Text = "Total Asset";
+                    totalAccount.FontSize = 30;
+                    totalAmount.FontSize = 30;
+                    totalAmount.Text = total_assets.ToString();
+                    assetAccount.Children.Add(totalAccount);
+                    assetAmount.Children.Add(totalAmount);
                     reader.Close();
                 }
                 string selectQuery4 = "SELECT name,amount FROM Account WHERE type='Liability'";
@@ -114,6 +122,14 @@ namespace AccountingSoftware.View
                         liabilityAccount.Children.Add(account);
                         liabilityAmount.Children.Add(amount);
                     }
+                    TextBlock totalAccount = new TextBlock();
+                    TextBlock totalAmount = new TextBlock();
+                    totalAccount.Text = "Total Liability";
+                    totalAccount.FontSize = 30;
+                    totalAmount.FontSize = 30;
+                    totalAmount.Text = total_liability.ToString();
+                    liabilityAccount.Children.Add(totalAccount);
+                    liabilityAmount.Children.Add(totalAmount);
                     reader.Close();
                 }
 
@@ -144,6 +160,16 @@ namespace AccountingSoftware.View
                     retainedEarningsLabel.Text = "Retained Earnings";
                     equityAccount.Children.Add(retainedEarningsLabel);
                     equityAmount.Children.Add(retainedEarnings);
+                    total_equity += (total_revenue - total_expense);
+
+                    TextBlock totalAccount = new TextBlock();
+                    TextBlock totalAmount = new TextBlock();
+                    totalAccount.Text = "Total Equity";
+                    totalAccount.FontSize = 30;
+                    totalAmount.FontSize = 30;
+                    totalAmount.Text = total_equity.ToString();
+                    equityAccount.Children.Add(totalAccount);
+                    equityAmount.Children.Add(totalAmount);
                 }
 
             }
